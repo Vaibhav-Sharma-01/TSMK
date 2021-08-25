@@ -59,7 +59,6 @@ const handle = () => {
         for (let i = 0; i < file1.length; i++) {
           for (let j = 0; j < filess.length; j++) {
             if (file1[i] != filess[j]) {
-              console.log("hi");
               fs1.move(
                 directoryPath1 + "/" + file1[i],
                 directoryPath2 + "/" + file1[i],

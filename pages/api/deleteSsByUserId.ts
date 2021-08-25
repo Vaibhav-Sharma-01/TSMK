@@ -13,7 +13,9 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
 const handle = () => {
   const directoryPath1 = path.join(process.cwd(), "assetsonline/" + data.id);
   try {
-    fs.unlinkSync(directoryPath1+"/"+data.name)
+    data.ss.forEach(function(d){
+      fs.unlinkSync(directoryPath1+"/"+d)
+    })
   } catch(err) {
     console.error(err)
   }
