@@ -41,6 +41,7 @@ export default function findSs() {
             for(let i = 0; i<screenshots.length;i++){
                 if(screenshots[i]==ss){
                     screenshots.splice(i, 1);
+                
                 }
             }
         }
